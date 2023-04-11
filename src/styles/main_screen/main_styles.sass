@@ -1,0 +1,555 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+// Styles
+
+*
+    margin: 0
+    padding: 0
+
+body
+    width: 100%
+    height: auto
+    background-color: $pastel_blue
+    font-family: 'Source Sans Pro', sans-serif
+    overflow-x: hidden
+
+    .popup-window-sent
+        background-color: $main_blue
+        width: clamp(200px,20.833333333333332vw,800px)
+        height: clamp(204px,21.25vw,816px)
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-top: $eightclamp
+        border: clamp(2px,0.20833333333333334vw,8px) solid #33C191
+        box-shadow: 0px 12px 30px 10px rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+
+        .name-input, .phone-input, .comment-input, .send
+            width: clamp(170px,17.708333333333332vw,680px)
+
+        .name-input, .phone-input
+            height: clamp(21.085px,2.1963541666666666vw,84.34px)
+            border-radius: 25px
+            font-size: clamp(7px,0.7291666666666666vw,28px)
+            padding-left: $sixteenclamp
+            border: 2px solid $light_blue
+            outline: none
+            &:focus
+                border: 2px solid $yellow
+
+        .name-input
+            margin-top: $thirtytwoclamp
+
+        .phone-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            height: clamp(61.5px,6.40625vw,246px)
+            padding-left: $sixteenclamp
+            border-radius: 10px
+            font-size: clamp(7px,0.7291666666666666vw,28px)
+            padding-top: clamp(5px,0.5208333333333334vw,20px)
+            border: 2px solid $light_blue
+            outline: none
+            &:focus
+                border: 2px solid $yellow
+
+        .send
+            width: clamp(178px,18.541666666666668vw,712px)
+            height: clamp(25px,2.6041666666666665vw,100px)
+            margin-top: $thirtytwoclamp
+            border-radius: 30px
+            border: none
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+            color: white
+            cursor: pointer
+            background-color: $yellow
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+        .sended
+            width: clamp(178px,18.541666666666668vw,712px)
+            height: clamp(25px,2.6041666666666665vw,100px)
+            margin-top: $thirtytwoclamp
+            border-radius: 30px
+            border: none
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+            color: white
+            cursor: pointer
+            background-color: #33C191
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+    .popup-window
+        background-color: $main_blue
+        width: clamp(200px,20.833333333333332vw,800px)
+        height: clamp(204px,21.25vw,816px)
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-top: $eightclamp
+        border: clamp(2px,0.20833333333333334vw,8px) solid #2593E9
+        box-shadow: 0px 12px 30px 10px rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+
+        .name-input, .phone-input, .comment-input, .send
+            width: clamp(170px,17.708333333333332vw,680px)
+
+        .name-input, .phone-input
+            height: clamp(21.085px,2.1963541666666666vw,84.34px)
+            border-radius: 25px
+            font-size: clamp(7px,0.7291666666666666vw,28px)
+            padding-left: $sixteenclamp
+            border: 2px solid $light_blue
+            outline: none
+            &:focus
+                border: 2px solid $yellow
+
+        .name-input
+            margin-top: $thirtytwoclamp
+
+        .phone-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            height: clamp(61.5px,6.40625vw,246px)
+            padding-left: $sixteenclamp
+            border-radius: 10px
+            font-size: clamp(7px,0.7291666666666666vw,28px)
+            padding-top: clamp(5px,0.5208333333333334vw,20px)
+            border: 2px solid $light_blue
+            outline: none
+            &:focus
+                border: 2px solid $yellow
+
+        .send
+            width: clamp(178px,18.541666666666668vw,712px)
+            height: clamp(25px,2.6041666666666665vw,100px)
+            margin-top: $thirtytwoclamp
+            border-radius: 30px
+            border: none
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+            color: white
+            cursor: pointer
+            background-color: $yellow
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+        .sended
+            width: clamp(178px,18.541666666666668vw,712px)
+            height: clamp(25px,2.6041666666666665vw,100px)
+            margin-top: $thirtytwoclamp
+            border-radius: 30px
+            border: none
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+            color: white
+            cursor: pointer
+            background-color: #33C191
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+    .container
+        width: 100%
+        height: auto
+        background-image: url(../../assets/Background.jpg)
+        background-repeat: no-repeat
+        display: flex
+        flex-direction: column
+        background-size: 100% auto
+
+        .main-container
+            width: 100%
+            height: auto
+            // overflow: auto
+            // overflow-y: hidden
+            box-sizing: border-box
+            z-index: 20
+            position: relative
+
+            .header
+                width: 100%
+                height: auto
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $pastel_blue
+                flex-direction: column
+
+                .separator
+                    width: 100%
+                    height: clamp(5px,0.5208333333333334vw,20px)
+                    background-color: $main_blue
+
+                .navigation
+                    margin-top: $sixteenclamp
+                    margin-bottom: $sixteenclamp
+                    width: $wrapper
+                    height: auto
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+
+                    .for-burger-menu
+                        display: none
+
+                        .burger-menu
+                            display: none
+
+                    .logo
+                        width: clamp(92.5px,9.635416666666666vw,370px)
+                        height: clamp(49.085px,5.113020833333334vw,196.34px)
+                        cursor: pointer
+
+                    .mobile-logo
+                        display: none
+
+                    .nav-links
+
+                        .nav-link
+                            font-size: $small_text
+                            color: $main_blue
+                            cursor: pointer
+                            transition: 0.3s all
+                            text-decoration: none
+                            &:hover
+                                color: $yellow
+
+                        .about
+                            margin-right: $thirtytwoclamp
+
+                        .services
+                            margin-right: $thirtytwoclamp
+
+                        .contacts
+                            margin-right: $sixtyfourclamp
+
+                        .tender-button
+                            width: clamp(117.5px,12.239583333333334vw,470px)
+                            height: clamp(21.5px,2.2395833333333335vw,86px)
+                            border-radius: 1.8229166666666667vw
+                            background-color: $yellow
+                            font-size: $small_text
+                            color: white
+                            border: none
+                            cursor: pointer
+                            transition: 0.4s all
+                            &:hover
+                                background-color: $light_blue
+
+            .gradient
+                width: 100%
+                height: 87.1%
+                position: absolute
+                background: linear-gradient(89.78deg, rgba(37, 147, 233, 0.98) 24.5%, rgba(37, 147, 233, 0.23) 93.44%)
+                // z-index: 0
+
+            .wrapper
+                width: $wrapper
+                height: auto
+                margin: auto
+                display: flex
+                justify-content: center
+                z-index: 100
+                flex-direction: column
+                // border: 2px solid green
+                margin-top: $onetwoeightclamp
+                margin-bottom: $onetwoeightclamp
+
+                .main-page
+                    // display: flex
+
+                    .heading
+                        width: clamp(447.5px,46.614583333333336vw,1790px)
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: $main_heading
+                        text-transform: uppercase
+                        color: #FFFFFF
+
+                    .main-paragraph
+                        width: clamp(336px,35vw,1344px)
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: $basic_text
+                        margin-top: $thirtytwoclamp
+                        color: white
+
+                    .main-button
+                        width: clamp(193.5px,20.15625vw,774px)
+                        height: clamp(30px,3.125vw,120px)
+                        margin-top: $sixtyfourclamp
+                        font-family: 'Source Sans Pro'
+                        font-style: normal
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        text-decoration: none
+                        cursor: pointer
+                        font-size: $thirtytwoclamp
+                        border: none
+                        border-radius: 1.8229166666666667vw
+                        background-color: $yellow
+                        color: white
+                        transition: 0.3s all
+                        &:hover
+                            background-color: $main_blue
+
+        .separator-2
+            width: 100%
+            height: clamp(5.5px,0.5729166666666666vw,22px)
+            background-color: $main_blue
+            margin-top: clamp(11.5px,1.1979166666666667vw,46px)
+
+        .separator-3
+            background-color: #01476D !important
+            width: 100%
+            height: 10px
+            background-color: $main_blue
+            margin-top: clamp(6.5px,0.6770833333333334vw,26px)
+
+        .separator-4
+            background-color: #01476D !important
+            width: 100%
+            height: clamp(5px,0.5208333333333334vw,20px)
+            background-color: $main_blue
+
+        .separator-5
+            background-color: #01476D !important
+            width: 100%
+            height: clamp(5px,0.5208333333333334vw,20px)
+            background-color: $main_blue
+            margin-top: $onetwoeightclamp
+
+@media only screen and (max-width: 767px)
+
+    body
+        background-color: $pastel_blue
+        font-family: 'Source Sans Pro', sans-serif
+
+        .container
+            width: 100% !important
+            height: auto !important
+            background-image: url(../../assets/Background-Mobile.jpg)
+            background-repeat: no-repeat
+            display: flex !important
+            flex-direction: column !important
+            background-size: 100% 100vh !important
+
+            .separator-2
+                width: 100% !important
+                height: 10px
+                background-color: $main_blue
+                margin-top: 0px
+
+            .separator-3
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+                margin-top: clamp(6.5px,0.6770833333333334vw,26px)
+
+            .separator-4
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+
+            .separator-5
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+                margin-top: $onetwoeightclamp
+
+        .main-container
+            width: 100% !important
+            height: 100vh !important
+
+            .gradient
+                width: 100% !important
+                height: 92.5vh !important
+                position: absolute !important
+                // z-index: 1 !important
+                background: linear-gradient(180.2deg, rgba(37, 147, 233, 0.98) 6.1%, rgba(37, 147, 233, 0.23) 73.68%) !important
+
+            .wrapper
+                margin-top: 100px !important
+                z-index: 10 !important
+
+                .main-page
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    .heading
+                        width: clamp(177px,82.71028037383178vw,708px) !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        font-weight: 700 !important
+                        text-align: center !important
+                        font-size: clamp(20px,9.345794392523365vw,80px) !important
+                        text-transform: uppercase !important
+                        color: #FFFFFF !important
+
+                    .main-paragraph
+                        width: clamp(336px,35vw,1344px) !important
+                        font-weight: 600 !important
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        text-align: center !important
+                        font-size: clamp(12px,5.607476635514018vw,48px) !important
+                        margin-top: clamp(16px,7.4766355140186915vw,64px)
+                        color: white
+
+                    .main-button
+                        width: clamp(161.5px,75.46728971962617vw,646px) !important
+                        height: clamp(30px,14.018691588785046vw,120px) !important
+                        font-size: clamp(15px,7.009345794392523vw, 60px) !important
+                        border-radius: 44px !important
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+            .header
+                width: 100% !important
+                height: auto !important
+                display: flex !important
+                justify-content: center !important
+                align-items: center !important
+                background-color: $pastel_blue !important
+                flex-direction: column !important
+
+                .navigation
+                    margin-top: $sixteenclamp !important
+                    margin-bottom: $sixteenclamp !important
+                    width: $wrapper !important
+                    height: auto !important
+                    display: flex !important
+                    align-items: center !important
+                    justify-content: space-between !important
+
+                    .nav-links
+                        display: none !important
+
+                    .logo
+                        display: none !important
+
+                    .mobile-logo
+                        width: clamp(20px,9.345794392523365vw,80px) !important
+                        height: clamp(24.5px,11.448598130841122vw,98px) !important
+                        display: flex !important
+
+                    .for-burger-menu
+                        display: flex !important
+                        align-items: center !important
+                        justify-content: center !important
+
+                        .x-mark
+                            font-size: clamp(17.5px,8.177570093457945vw,70px)
+                            color: $yellow
+                            z-index: 10
+                            cursor: pointer
+
+                        .burger-menu
+                            width: clamp(21px,9.813084112149532vw,84px) !important
+                            height: clamp(11.5px,5.373831775700935vw,46px) !important
+                            color: $yellow !important
+                            cursor: pointer !important
+                            display: flex !important
+                            flex-direction: column !important
+                            justify-content: space-between !important
+
+                            .burger-line-1, .burger-line-2, .burger-line-3
+                                width: clamp(21px,9.813084112149532vw,84px) !important
+                                height: clamp(1.5px,0.7009345794392523vw,6px) !important
+                                background-color: $yellow !important
+
+@media (min-width: 769px) and (max-width: 1024px)
+
+    body
+        background-color: $pastel_blue
+        font-family: 'Source Sans Pro', sans-serif
+
+        .container
+            width: 100%
+            height: auto
+            background-image: url(../../assets/Background.jpg)
+            background-repeat: no-repeat
+            display: flex
+            flex-direction: column
+            background-size: 100% auto
+
+            .separator-2
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+                margin-top: clamp(6.5px,0.6770833333333334vw,26px)
+
+            .separator-3
+                background-color: #01476D !important
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+                margin-top: clamp(6.5px,0.6770833333333334vw,26px)
+
+            .separator-4
+                background-color: #01476D !important
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+
+            .separator-5
+                background-color: #01476D !important
+                width: 100%
+                height: 10px
+                background-color: $main_blue
+                margin-top: $onetwoeightclamp

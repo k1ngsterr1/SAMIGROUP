@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.contact-container {
+  width: 86.4583333333%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+}
+.contact-container .contact-heading {
+  margin: auto;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(22.5px, 2.34375vw, 90px);
+  color: #016599;
+  margin-top: clamp(45px, 4.6875vw, 180px);
+}
+.contact-container .contacts-and-form {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-container .contacts-and-form .contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contacts-and-form .contact-paragraph {
+  width: clamp(490px, 51.0416666667vw, 1960px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  color: #016599;
+}
+.contact-container .contacts-and-form .phone-number-mob, .contact-container .contacts-and-form .email-mob, .contact-container .contacts-and-form .showOnMap-mob {
+  display: none;
+}
+.contact-container .contacts-and-form .phone-number {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(20px, 2.0833333333vw, 80px);
+  color: #016599;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.contact-container .contacts-and-form .mail, .contact-container .contacts-and-form .geo {
+  display: flex;
+  align-items: center;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.contact-container .contacts-and-form .mail .geo-icon, .contact-container .contacts-and-form .geo .geo-icon {
+  width: clamp(13px, 1.3541666667vw, 52px);
+  height: clamp(18px, 1.875vw, 72px);
+}
+.contact-container .contacts-and-form .mail .mail-icon, .contact-container .contacts-and-form .geo .mail-icon {
+  width: clamp(17.5px, 1.8229166667vw, 70px);
+  height: clamp(14px, 1.4583333333vw, 56px);
+}
+.contact-container .contacts-and-form .mail .mail-bold-text, .contact-container .contacts-and-form .mail .geo-bold-text, .contact-container .contacts-and-form .geo .mail-bold-text, .contact-container .contacts-and-form .geo .geo-bold-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  color: #2593E9;
+  margin-left: clamp(5px, 0.5208333333vw, 20px);
+}
+.contact-container .contacts-and-form .mail .email, .contact-container .contacts-and-form .mail .adress, .contact-container .contacts-and-form .geo .email, .contact-container .contacts-and-form .geo .adress {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-left: clamp(4px, 0.4166666667vw, 16px);
+  color: #016599;
+}
+.contact-container .contacts-and-form .showOnMap {
+  width: clamp(164px, 17.0833333333vw, 656px);
+  height: clamp(24px, 2.5vw, 96px);
+  background: #2593E9;
+  border-radius: clamp(23px, 2.3958333333vw, 92px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  font-size: clamp(12px, 1.25vw, 48px);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.contact-container .contacts-and-form .showOnMap:hover {
+  background: #E39E22;
+}
+.contact-container .contact-form-sent {
+  width: clamp(270px, 28.125vw, 1080px);
+  height: clamp(245px, 25.5208333333vw, 980px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  background-color: #016599;
+  box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25);
+  border-radius: clamp(6px, 0.625vw, 24px);
+  border: 3px solid #33C191;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-container .contact-form-sent .name-input, .contact-container .contact-form-sent .phone-input {
+  width: 88.1481481481%;
+  height: clamp(22.5px, 2.34375vw, 90px);
+  border-radius: clamp(25px, 2.6041666667vw, 100px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(8.5px, 0.8854166667vw, 34px);
+  border: 2px solid #2593E9;
+}
+.contact-container .contact-form-sent .name-input:focus, .contact-container .contact-form-sent .phone-input:focus {
+  border: 2px solid #E39E22;
+  outline: none;
+}
+.contact-container .contact-form-sent .name-input {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.contact-container .contact-form-sent .phone-input {
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+.contact-container .contact-form-sent .comment-input {
+  width: 88.1481481481%;
+  height: clamp(85px, 8.8541666667vw, 340px);
+  border-radius: clamp(7.5px, 0.78125vw, 30px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(8px, 0.8333333333vw, 32px);
+  padding-top: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(8.5px, 0.8854166667vw, 34px);
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  display: flex;
+  border: 2px solid #2593E9;
+}
+.contact-container .contact-form-sent .comment-input:focus {
+  border: 2px solid #E39E22;
+  outline: none;
+}
+.contact-container .contact-form-sent .send {
+  width: 88.1481481481%;
+  height: clamp(27.5px, 2.8645833333vw, 110px);
+  background-color: #E39E22;
+  color: white;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  border-radius: clamp(20px, 2.0833333333vw, 80px);
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+}
+.contact-container .contact-form-sent .send:hover {
+  background-color: #2593E9;
+}
+.contact-container .contact-form-sent .sended {
+  width: 88.1481481481% !important;
+  height: clamp(27.5px, 2.8645833333vw, 110px) !important;
+  margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+  color: white !important;
+  margin-top: clamp(32px, 3.3333333333vw, 128px) !important;
+  font-family: "Source Sans Pro" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px) !important;
+  font-size: clamp(11.5px, 1.1979166667vw, 46px) !important;
+  border-radius: clamp(20px, 2.0833333333vw, 80px) !important;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+  background-color: #33C191;
+}
+.contact-container .contact-form-sent .sended:hover {
+  background-color: #2593E9;
+}
+.contact-container .contact-form {
+  width: clamp(270px, 28.125vw, 1080px);
+  height: clamp(245px, 25.5208333333vw, 980px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  background-color: #016599;
+  box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25);
+  border-radius: clamp(6px, 0.625vw, 24px);
+  border: 2px solid #2593E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-container .contact-form .name-input, .contact-container .contact-form .phone-input {
+  width: 88.1481481481%;
+  height: clamp(22.5px, 2.34375vw, 90px);
+  border-radius: clamp(25px, 2.6041666667vw, 100px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(8.5px, 0.8854166667vw, 34px);
+  border: 2px solid #2593E9;
+}
+.contact-container .contact-form .name-input:focus, .contact-container .contact-form .phone-input:focus {
+  border: 2px solid #E39E22;
+  outline: none;
+}
+.contact-container .contact-form .name-input {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.contact-container .contact-form .phone-input {
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+.contact-container .contact-form .comment-input {
+  width: 88.1481481481%;
+  height: clamp(85px, 8.8541666667vw, 340px);
+  border-radius: clamp(7.5px, 0.78125vw, 30px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(8px, 0.8333333333vw, 32px);
+  padding-top: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(8.5px, 0.8854166667vw, 34px);
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  display: flex;
+  border: 2px solid #2593E9;
+}
+.contact-container .contact-form .comment-input:focus {
+  border: 2px solid #E39E22;
+  outline: none;
+}
+.contact-container .contact-form .send {
+  width: 88.1481481481%;
+  height: clamp(27.5px, 2.8645833333vw, 110px);
+  background-color: #E39E22;
+  color: white;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  border-radius: clamp(20px, 2.0833333333vw, 80px);
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+}
+.contact-container .contact-form .send:hover {
+  background-color: #2593E9;
+}
+.contact-container .contact-form .sended {
+  width: 88.1481481481%;
+  height: clamp(27.5px, 2.8645833333vw, 110px);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  color: white;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  border-radius: clamp(20px, 2.0833333333vw, 80px);
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+  background-color: #33C191;
+  transition: 0.3s all;
+}
+.contact-container .contact-form .sended:hover {
+  background-color: #2593E9;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-container {
+    width: 86.4583333333% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    margin: auto !important;
+  }
+  .contact-container .contact-heading {
+    margin: auto !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(18px, 8.4112149533vw, 72px) !important;
+    color: #016599 !important;
+    margin-top: clamp(64px, 6.6666666667vw, 256px) !important;
+  }
+  .contact-container .contacts-and-form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent {
+    width: clamp(192.5px, 89.953271028vw, 770px) !important;
+    height: clamp(208px, 97.1962616822vw, 832px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    background-color: #016599 !important;
+    border: 2px solid #33C191;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25) !important;
+    border-radius: clamp(6px, 2.8037383178vw, 24px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input, .contact-container .contacts-and-form .contact-form-sent .phone-input {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(22px, 10.2803738318vw, 88px) !important;
+    border-radius: clamp(25px, 2.6041666667vw, 100px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    padding-left: clamp(8px, 3.738317757vw, 32px) !important;
+    font-size: clamp(7px, 3.2710280374vw, 28px) !important;
+    border: 3px solid #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input:focus, .contact-container .contacts-and-form .contact-form-sent .phone-input:focus {
+    border: 3px solid #E39E22 !important;
+    outline: none !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input .name-input, .contact-container .contacts-and-form .contact-form-sent .phone-input .name-input {
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input .phone-input, .contact-container .contacts-and-form .contact-form-sent .phone-input .phone-input {
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input .comment-input, .contact-container .contacts-and-form .contact-form-sent .phone-input .comment-input {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(38px, 35.5140186916vw, 304px) !important;
+    border-radius: clamp(10px, 1.0416666667vw, 40px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    padding-left: clamp(8px, 3.738317757vw, 32px) !important;
+    padding-top: clamp(8px, 0.8333333333vw, 32px) !important;
+    font-size: clamp(7px, 3.2710280374vw, 28px) !important;
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+    display: flex !important;
+    border: 3px solid #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .contact-form-sent .name-input .comment-input:focus, .contact-container .contacts-and-form .contact-form-sent .phone-input .comment-input:focus {
+    border: 3px solid #E39E22 !important;
+    outline: none !important;
+  }
+  .contact-container .contacts-and-form .contact-form {
+    width: clamp(192.5px, 89.953271028vw, 770px) !important;
+    height: clamp(208px, 97.1962616822vw, 832px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    background-color: #016599 !important;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25) !important;
+    border-radius: clamp(6px, 2.8037383178vw, 24px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contact-container .contacts-and-form .contact-form .name-input, .contact-container .contacts-and-form .contact-form .phone-input {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(22px, 10.2803738318vw, 88px) !important;
+    border-radius: clamp(25px, 2.6041666667vw, 100px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    padding-left: clamp(8px, 3.738317757vw, 32px) !important;
+    font-size: clamp(7px, 3.2710280374vw, 28px) !important;
+    border: 3px solid #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .contact-form .name-input:focus, .contact-container .contacts-and-form .contact-form .phone-input:focus {
+    border: 3px solid #E39E22 !important;
+    outline: none !important;
+  }
+  .contact-container .contacts-and-form .contact-form .name-input {
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .contact-container .contacts-and-form .contact-form .phone-input {
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+  }
+  .contact-container .contacts-and-form .contact-form .comment-input {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(38px, 35.5140186916vw, 304px) !important;
+    border-radius: clamp(10px, 1.0416666667vw, 40px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    padding-left: clamp(8px, 3.738317757vw, 32px) !important;
+    padding-top: clamp(8px, 0.8333333333vw, 32px) !important;
+    font-size: clamp(7px, 3.2710280374vw, 28px) !important;
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+    display: flex !important;
+    border: 3px solid #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .contact-form .comment-input:focus {
+    border: 3px solid #E39E22 !important;
+    outline: none !important;
+  }
+  .contact-container .contacts-and-form .contact-form .send {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(24px, 11.214953271vw, 96px) !important;
+    background-color: #E39E22 !important;
+    color: white !important;
+    margin-top: clamp(32px, 3.3333333333vw, 128px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    margin-bottom: clamp(16px, 7.476635514vw, 64px) !important;
+    font-size: clamp(11.5px, 5.3738317757vw, 46px) !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    border: none !important;
+    transition: 0.3s all !important;
+  }
+  .contact-container .contacts-and-form .contact-form .send:hover {
+    background-color: #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .contact-form .sended {
+    width: clamp(165px, 77.1028037383vw, 660px) !important;
+    height: clamp(24px, 11.214953271vw, 96px) !important;
+    background-color: #33C191 !important;
+    color: white !important;
+    margin-top: clamp(32px, 3.3333333333vw, 128px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    margin-bottom: clamp(16px, 7.476635514vw, 64px) !important;
+    font-size: clamp(11.5px, 5.3738317757vw, 46px) !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    border: none !important;
+    transition: 0.3s all !important;
+  }
+  .contact-container .contacts-and-form .contact-form .sended:hover {
+    background-color: #2593E9 !important;
+  }
+  .contact-container .contacts-and-form .phone-number-mob, .contact-container .contacts-and-form .email-mob, .contact-container .contacts-and-form .showOnMap-mob {
+    display: flex !important;
+    text-decoration: none;
+  }
+  .contact-container .contacts-and-form .phone-number-mob {
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(19px, 8.8785046729vw, 76px) !important;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+    color: #016599 !important;
+  }
+  .contact-container .contacts-and-form .email-mob {
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(17.5px, 8.1775700935vw, 70px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    color: #016599 !important;
+  }
+  .contact-container .contacts-and-form .showOnMap-mob {
+    width: clamp(172.5px, 80.6074766355vw, 790px) !important;
+    height: clamp(30px, 14.0186915888vw, 120px) !important;
+    border-radius: 50px !important;
+    outline: none !important;
+    border: none !important;
+    background-color: #2593E9 !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: clamp(12.5px, 5.8411214953vw, 50px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    justify-content: center !important;
+  }
+  .contact-container .contacts-and-form .contacts {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .contact-container .contacts-and-form .contacts .contact-paragraph {
+    width: clamp(191px, 89.2523364486vw, 764px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: clamp(12px, 5.6074766355vw, 48px) !important;
+    margin-top: clamp(32px, 3.3333333333vw, 128px) !important;
+    text-align: center !important;
+    color: #016599 !important;
+  }
+  .contact-container .contacts-and-form .contacts .phone-number {
+    display: none !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(20px, 2.0833333333vw, 80px) !important;
+    color: #016599 !important;
+    margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+  }
+  .contact-container .contacts-and-form .contacts .mail, .contact-container .contacts-and-form .contacts .geo {
+    display: none !important;
+    align-items: center !important;
+    margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+  }
+  .contact-container .contacts-and-form .contacts .mail .geo-icon, .contact-container .contacts-and-form .contacts .geo .geo-icon {
+    width: clamp(13px, 1.3541666667vw, 52px) !important;
+    height: clamp(18px, 1.875vw, 72px) !important;
+  }
+  .contact-container .contacts-and-form .contacts .mail .mail-icon, .contact-container .contacts-and-form .contacts .geo .mail-icon {
+    width: clamp(17.5px, 1.8229166667vw, 70px) !important;
+    height: clamp(14px, 1.4583333333vw, 56px) !important;
+  }
+  .contact-container .contacts-and-form .contacts .mail .mail-bold-text, .contact-container .contacts-and-form .contacts .mail .geo-bold-text, .contact-container .contacts-and-form .contacts .geo .mail-bold-text, .contact-container .contacts-and-form .contacts .geo .geo-bold-text {
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(12.5px, 1.3020833333vw, 50px) !important;
+    color: #2593E9 !important;
+    margin-left: clamp(5px, 0.5208333333vw, 20px) !important;
+  }
+  .contact-container .contacts-and-form .contacts .mail .email, .contact-container .contacts-and-form .contacts .mail .adress, .contact-container .contacts-and-form .contacts .geo .email, .contact-container .contacts-and-form .contacts .geo .adress {
+    display: none !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: clamp(12.5px, 1.3020833333vw, 50px) !important;
+    margin-left: clamp(4px, 0.4166666667vw, 16px) !important;
+    color: #016599 !important;
+  }
+  .contact-container .contacts-and-form .contacts .showOnMap {
+    display: none !important;
+    width: clamp(164px, 17.0833333333vw, 656px) !important;
+    height: clamp(24px, 2.5vw, 96px) !important;
+    background: #2593E9 !important;
+    border-radius: clamp(23px, 2.3958333333vw, 92px) !important;
+    margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+    font-size: clamp(12px, 1.25vw, 48px) !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: 0.3s all !important;
+  }
+  .contact-container .contacts-and-form .contacts .showOnMap:hover {
+    background: #E39E22 !important;
+  }
+}/*# sourceMappingURL=contact_styles.css.map */

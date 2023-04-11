@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #E6F4F1;
+  display: flex;
+  flex-direction: column;
+}
+.footer .upper-footer {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.footer .upper-footer .logo {
+  width: clamp(92.5px, 9.6354166667vw, 370px);
+  height: clamp(49.085px, 5.1130208333vw, 196.34px);
+}
+.footer .upper-footer .footer-nav {
+  display: flex;
+  align-items: center;
+}
+.footer .upper-footer .footer-nav .footer-about-company, .footer .upper-footer .footer-nav .footer-services, .footer .upper-footer .footer-nav .footer-contacts {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  color: #016599;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.footer .upper-footer .footer-nav .footer-about-company:hover, .footer .upper-footer .footer-nav .footer-services:hover, .footer .upper-footer .footer-nav .footer-contacts:hover {
+  color: #E39E22;
+}
+.footer .upper-footer .footer-nav .footer-contacts {
+  text-decoration: none;
+}
+.footer .upper-footer .footer-nav .footer-services {
+  margin-right: clamp(32px, 3.3333333333vw, 128px);
+  margin-left: clamp(32px, 3.3333333333vw, 128px);
+  text-decoration: none;
+}
+.footer .upper-footer .footer-nav .footer-about-company {
+  margin-left: clamp(32px, 3.3333333333vw, 128px);
+  text-decoration: none;
+}
+.footer .upper-footer .footer-nav .footer-button {
+  width: clamp(132.5px, 13.8020833333vw, 530px);
+  height: clamp(22.5px, 2.34375vw, 90px);
+  background-color: #E39E22;
+  cursor: pointer;
+  border-radius: clamp(17.5px, 1.8229166667vw, 70px);
+  border: none;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  color: white;
+  transition: 0.3s all;
+}
+.footer .upper-footer .footer-nav .footer-button:hover {
+  background-color: #2593E9;
+}
+.footer .footer-separator {
+  width: 100%;
+  height: 3px;
+  background: rgba(1, 101, 153, 0.2);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.footer .down-footer {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  color: #016599;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+}
+.footer .down-footer .sami-group-mob {
+  display: none;
+}
+.footer .down-footer .contact-with-us-mob {
+  display: none;
+}
+.footer .down-footer .contact-buttons {
+  display: flex;
+  align-items: center;
+}
+.footer .down-footer .contact-buttons .Mail-1, .footer .down-footer .contact-buttons .Mail-2, .footer .down-footer .contact-buttons .Mail-3 {
+  width: clamp(25px, 2.6041666667vw, 100px);
+  height: clamp(25px, 2.6041666667vw, 100px);
+  background-color: #E39E22;
+  border: none;
+  border-radius: 50%;
+  font-size: clamp(10.5px, 1.09375vw, 42px);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.footer .down-footer .contact-buttons .Mail-1:hover, .footer .down-footer .contact-buttons .Mail-2:hover, .footer .down-footer .contact-buttons .Mail-3:hover {
+  background-color: #2593E9;
+}
+.footer .down-footer .contact-buttons .Mail-2 {
+  margin-right: clamp(8px, 0.8333333333vw, 32px);
+}
+.footer .down-footer .contact-buttons .Mail-1 {
+  margin-right: clamp(8px, 0.8333333333vw, 32px);
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #016599 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .footer .upper-footer {
+    width: 86.4583333333% !important;
+    height: auto !important;
+    display: flex !important;
+    margin: auto !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+  }
+  .footer .upper-footer .logo {
+    display: none !important;
+    width: clamp(92.5px, 9.6354166667vw, 370px) !important;
+    height: clamp(49.085px, 5.1130208333vw, 196.34px) !important;
+  }
+  .footer .upper-footer .footer-nav {
+    display: none !important;
+    align-items: center !important;
+  }
+  .footer .upper-footer .footer-nav .footer-about-company, .footer .upper-footer .footer-nav .footer-services, .footer .upper-footer .footer-nav .footer-contacts {
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: clamp(11.5px, 1.1979166667vw, 46px) !important;
+    color: #016599 !important;
+    transition: 0.3s all !important;
+    cursor: pointer !important;
+  }
+  .footer .upper-footer .footer-nav .footer-about-company:hover, .footer .upper-footer .footer-nav .footer-services:hover, .footer .upper-footer .footer-nav .footer-contacts:hover {
+    color: #E39E22 !important;
+  }
+  .footer .upper-footer .footer-nav .footer-contacts {
+    margin-right: clamp(32px, 3.3333333333vw, 128px) !important;
+    text-decoration: none !important;
+  }
+  .footer .upper-footer .footer-nav .footer-services {
+    margin-right: clamp(32px, 3.3333333333vw, 128px) !important;
+    margin-left: clamp(32px, 3.3333333333vw, 128px) !important;
+    text-decoration: none !important;
+  }
+  .footer .upper-footer .footer-nav .footer-about-company {
+    margin-left: clamp(32px, 3.3333333333vw, 128px) !important;
+    text-decoration: none !important;
+  }
+  .footer .upper-footer .footer-nav .footer-button {
+    width: clamp(132.5px, 13.8020833333vw, 530px) !important;
+    height: clamp(22.5px, 2.34375vw, 90px) !important;
+    background-color: #E39E22 !important;
+    cursor: pointer !important;
+    border-radius: clamp(17.5px, 1.8229166667vw, 70px) !important;
+    border: none !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: clamp(12.5px, 1.3020833333vw, 50px) !important;
+    color: white !important;
+    transition: 0.3s all !important;
+  }
+  .footer .upper-footer .footer-nav .footer-button:hover {
+    background-color: #2593E9 !important;
+  }
+  .footer .footer-separator {
+    width: 100% !important;
+    height: 3px !important;
+    display: none !important;
+    background: rgba(1, 101, 153, 0.2) !important;
+    margin-top: clamp(16px, 1.6666666667vw, 64px) !important;
+  }
+  .footer .down-footer {
+    width: 86.4583333333% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .footer .down-footer .sami-group {
+    display: none !important;
+  }
+  .footer .down-footer .sami-group-mob {
+    display: flex !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: clamp(11.5px, 5.3738317757vw, 46px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    color: white !important;
+    margin-bottom: clamp(10px, 4.6728971963vw, 40px) !important;
+  }
+  .footer .down-footer .contact-with-us-mob {
+    width: clamp(137.5px, 64.2523364486vw, 550px) !important;
+    height: clamp(26.5px, 12.3831775701vw, 106px) !important;
+    font-size: clamp(12.5px, 5.8411214953vw, 50px) !important;
+    background-color: #E39E22 !important;
+    border-radius: 90px !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    border: none !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .footer .down-footer .contact-buttons {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .footer .down-footer .contact-buttons .Mail-1, .footer .down-footer .contact-buttons .Mail-2, .footer .down-footer .contact-buttons .Mail-3 {
+    width: clamp(25px, 11.6822429907vw, 100px) !important;
+    height: clamp(25px, 11.6822429907vw, 100px) !important;
+    background-color: #E39E22 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: 0.3s all !important;
+  }
+  .footer .down-footer .contact-buttons .Mail-1:hover, .footer .down-footer .contact-buttons .Mail-2:hover, .footer .down-footer .contact-buttons .Mail-3:hover {
+    background-color: #2593E9 !important;
+  }
+  .footer .down-footer .contact-buttons .Mail-2 {
+    margin-right: clamp(8px, 3.738317757vw, 32px);
+  }
+  .footer .down-footer .contact-buttons .Mail-1 {
+    margin-right: clamp(8px, 3.738317757vw, 32px);
+  }
+}/*# sourceMappingURL=footer_styles.css.map */

@@ -1,0 +1,70 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+*
+    margin: 0
+    padding: 0
+
+body
+    width: 100%
+    height: auto
+    background-color: $pastel_blue
+    font-family: 'Source Sans Pro', sans-serif
+    overflow-x: hidden
+
+    .mobile-nav-links
+        width: 100% !important
+        height: auto !important
+        background-color: $pastel_blue !important
+        top: clamp(34.5px,16.121495327102803vw,138px)
+        box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.25) !important
+        display: flex !important
+        z-index: 10 !important
+        flex-direction: column !important
+        margin-left: auto !important
+        margin-right: auto !important
+        left: 0 !important
+        right: 0 !important
+        text-align: center !important
+        position: absolute !important
+
+        .about-mob-link, .services-mob-link, .contacts-mob-link
+            text-decoration: none
+            color: $main_blue
+            font-size: clamp(15px,7.009345794392523vw,60px)
+
+        .about-mob-link
+            margin-top: clamp(16px,7.4766355140186915vw,64px)
+
+        .services-mob-link
+            margin-top: clamp(10px,4.672897196261682vw,40px)
+
+        .contacts-mob-link
+            margin-top: clamp(10px,4.672897196261682vw,40px)
+            margin-bottom: clamp(16px,7.4766355140186915vw,64px)

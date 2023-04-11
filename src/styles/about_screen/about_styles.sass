@@ -1,0 +1,193 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+.about-container
+    width: 100%
+    height: auto !important
+    display: flex
+    flex-direction: column
+
+    .separator-2
+        width: 100%
+        position: relative
+        height: clamp(5px,0.5208333333333334vw,20px)
+        background-color: $main_blue
+
+    .wrapper-about
+        width: 100%
+        height: auto
+        margin: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        z-index: 100
+        margin-bottom: $onetwoeightclamp
+
+        .side-wheat
+            display: none
+
+        .side-wheat-2
+            display: none
+
+        .blue-triangle
+            // width: clamp(312px,32.5vw,1248px)
+            // height: clamp(339px,35.3125vw,1356px)
+            width: clamp(381.5px,39.739583333333336vw,1526px)
+            height: clamp(329.095px,34.28072916666667vw, 1316.38px)
+            margin-top: clamp(75px,7.8125vw,300px)
+            margin-right: clamp(-45px,-4.6875vw,-180px)
+
+        .about-text-container
+            margin-top: clamp(45px,4.6875vw,180px)
+            margin-left: clamp(65px,6.770833333333333vw,260px)
+
+            .arrow
+                display: none
+
+            .about-heading
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(22.5px,2.34375vw,90px)
+                color: #016599
+
+            .about-text
+                width: clamp(350px,36.458333333333336vw,1400px)
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 400
+                font-size: clamp(15px,1.5625vw,60px)
+                margin-top: $sixtyfourclamp
+                color: $main_blue
+
+            .contact-us-button
+                width: clamp(170px,17.708333333333332vw,680px)
+                height: clamp(25px,2.6041666666666665vw,100px)
+                border-radius: 1.8229166666666667vw
+                margin-top: $sixtyfourclamp
+                text-decoration: none
+                display: flex
+                align-items: center
+                justify-content: center
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 600
+                font-size: clamp(11.5px,1.4583333333333333vw,46px)
+                border: none
+                background-color: $yellow
+                color: white
+                cursor: pointer
+                transition: 0.3s all
+                &:hover
+                    background-color: $light_blue
+
+@media only screen and (max-width: 767px)
+
+    .separator-2
+        width: 100% !important
+        position: relative !important
+        height: clamp(5px,0.5208333333333334vw,20px) !important
+        background-color: $main_blue !important
+
+    .about-container
+        width: 100% !important
+        height: 100vh !important
+        display: flex !important
+        flex-direction: column !important
+
+        .wrapper-about
+            width: 100% !important
+            height: 100vh !important
+            display: flex !important
+            justify-content: center !important
+            align-items: center !important
+            margin-top: 5vw !important
+
+            .side-wheat
+                display: flex !important
+                position: absolute !important
+                top: clamp(480px,224.29906542056074vw,1920px) !important
+                z-index: 0 !important
+
+            .side-wheat-2
+                display: flex !important
+                position: absolute !important
+                top: 369.2307692307692vw !important
+                z-index: 0 !important
+
+            .blue-triangle
+                display: none !important
+
+            .about-text-container
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+                justify-content: center !important
+                z-index: 10 !important
+                margin-top: 0 !important
+                margin-left: 0 !important
+
+                .arrow
+                    display: flex !important
+                    margin-top: 16.41025641025641vw !important
+
+                .about-heading
+                    font-family: 'Source Sans Pro' !important
+                    text-align: center !important
+                    font-style: normal !important
+                    font-weight: 700 !important
+                    font-size: clamp(18px,9.23076923076923vw,72px) !important
+                    color: #016599 !important
+
+                .about-text
+                    width: clamp(200.5px,94.1025641025641vw,802px) !important
+                    font-family: 'Source Sans Pro' !important
+                    text-align: center !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: clamp(10.5px ,4.906542056074766vw, 42px) !important
+                    color: $main_blue !important
+
+                .contact-us-button
+                    width: 75.64102564102564vw !important
+                    height: 13.333333333333334vw !important
+                    border-radius: 90px !important
+                    margin-top: 16.41025641025641vw !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: clamp(12px,6.153846153846154vw,48px) !important
+                    z-index: 10 !important
+                    border: none !important
+                    background-color: $yellow !important
+                    color: white !important
+                    cursor: pointer !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background-color: $light_blue !important

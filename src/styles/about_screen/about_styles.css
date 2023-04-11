@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.about-container {
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .separator-2 {
+  width: 100%;
+  position: relative;
+  height: clamp(5px, 0.5208333333vw, 20px);
+  background-color: #016599;
+}
+.about-container .wrapper-about {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin-bottom: clamp(64px, 6.6666666667vw, 256px);
+}
+.about-container .wrapper-about .side-wheat {
+  display: none;
+}
+.about-container .wrapper-about .side-wheat-2 {
+  display: none;
+}
+.about-container .wrapper-about .blue-triangle {
+  width: clamp(381.5px, 39.7395833333vw, 1526px);
+  height: clamp(329.095px, 34.2807291667vw, 1316.38px);
+  margin-top: clamp(75px, 7.8125vw, 300px);
+  margin-right: clamp(-45px, -4.6875vw, -180px);
+}
+.about-container .wrapper-about .about-text-container {
+  margin-top: clamp(45px, 4.6875vw, 180px);
+  margin-left: clamp(65px, 6.7708333333vw, 260px);
+}
+.about-container .wrapper-about .about-text-container .arrow {
+  display: none;
+}
+.about-container .wrapper-about .about-text-container .about-heading {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(22.5px, 2.34375vw, 90px);
+  color: #016599;
+}
+.about-container .wrapper-about .about-text-container .about-text {
+  width: clamp(350px, 36.4583333333vw, 1400px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(15px, 1.5625vw, 60px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  color: #016599;
+}
+.about-container .wrapper-about .about-text-container .contact-us-button {
+  width: clamp(170px, 17.7083333333vw, 680px);
+  height: clamp(25px, 2.6041666667vw, 100px);
+  border-radius: 1.8229166667vw;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11.5px, 1.4583333333vw, 46px);
+  border: none;
+  background-color: #E39E22;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.about-container .wrapper-about .about-text-container .contact-us-button:hover {
+  background-color: #2593E9;
+}
+
+@media only screen and (max-width: 767px) {
+  .separator-2 {
+    width: 100% !important;
+    position: relative !important;
+    height: clamp(5px, 0.5208333333vw, 20px) !important;
+    background-color: #016599 !important;
+  }
+  .about-container {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .about-container .wrapper-about {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 5vw !important;
+  }
+  .about-container .wrapper-about .side-wheat {
+    display: flex !important;
+    position: absolute !important;
+    top: clamp(480px, 224.2990654206vw, 1920px) !important;
+    z-index: 0 !important;
+  }
+  .about-container .wrapper-about .side-wheat-2 {
+    display: flex !important;
+    position: absolute !important;
+    top: 369.2307692308vw !important;
+    z-index: 0 !important;
+  }
+  .about-container .wrapper-about .blue-triangle {
+    display: none !important;
+  }
+  .about-container .wrapper-about .about-text-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+  .about-container .wrapper-about .about-text-container .arrow {
+    display: flex !important;
+    margin-top: 16.4102564103vw !important;
+  }
+  .about-container .wrapper-about .about-text-container .about-heading {
+    font-family: "Source Sans Pro" !important;
+    text-align: center !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: clamp(18px, 9.2307692308vw, 72px) !important;
+    color: #016599 !important;
+  }
+  .about-container .wrapper-about .about-text-container .about-text {
+    width: clamp(200.5px, 94.1025641026vw, 802px) !important;
+    font-family: "Source Sans Pro" !important;
+    text-align: center !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px) !important;
+    color: #016599 !important;
+  }
+  .about-container .wrapper-about .about-text-container .contact-us-button {
+    width: 75.641025641vw !important;
+    height: 13.3333333333vw !important;
+    border-radius: 90px !important;
+    margin-top: 16.4102564103vw !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: clamp(12px, 6.1538461538vw, 48px) !important;
+    z-index: 10 !important;
+    border: none !important;
+    background-color: #E39E22 !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: 0.3s all !important;
+  }
+  .about-container .wrapper-about .about-text-container .contact-us-button:hover {
+    background-color: #2593E9 !important;
+  }
+}/*# sourceMappingURL=about_styles.css.map */

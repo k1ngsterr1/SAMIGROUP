@@ -1,0 +1,553 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+.contact-container
+    width: $wrapper
+    display: flex
+    flex-direction: column
+    height: auto
+    margin: auto
+
+    .contact-heading
+        margin: auto
+        font-family: 'Source Sans Pro'
+        font-style: normal
+        font-weight: 700
+        font-size: clamp(22.5px,2.34375vw,90px)
+        color: #016599
+        margin-top: clamp(45px,4.6875vw,180px)
+
+    .contacts-and-form
+        display: flex
+        justify-content: space-between
+
+        .contacts
+            display: flex
+            flex-direction: column
+
+        .contact-paragraph
+            width: clamp(490px,51.041666666666664vw,1960px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 400
+            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+            margin-top: $sixtyfourclamp
+            color: $main_blue
+
+        .phone-number-mob, .email-mob, .showOnMap-mob
+            display: none
+
+        .phone-number
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            font-size: clamp(20px,2.0833333333333335vw,80px)
+            color: $main_blue
+            margin-top: $thirtytwoclamp
+
+        .mail, .geo
+            display: flex
+            align-items: center
+            margin-top: $thirtytwoclamp
+
+            .geo-icon
+                width: clamp(13px,1.3541666666666667vw,52px)
+                height: clamp(18px,1.875vw,72px)
+
+            .mail-icon
+                width: clamp(17.5px,1.8229166666666667vw,70px)
+                height: clamp(14px,1.4583333333333333vw,56px)
+
+            .mail-bold-text, .geo-bold-text
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(12.5px,1.3020833333333333vw,50px)
+                color: $light_blue
+                margin-left: clamp(5px,0.5208333333333334vw,20px)
+
+            .email, .adress
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 400
+                font-size: clamp(12.5px,1.3020833333333333vw,50px)
+                margin-left: $eightclamp
+                color: $main_blue
+
+        .showOnMap
+            width: clamp(164px,17.083333333333332vw,656px)
+            height: clamp(24px,2.5vw,96px)
+            background: #2593E9
+            border-radius: clamp(23px,2.3958333333333335vw,92px)
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            margin-top: $thirtytwoclamp
+            font-size: clamp(12px,1.25vw,48px)
+            color: white
+            border: none
+            cursor: pointer
+            transition: 0.3s all
+            &:hover
+                background: $yellow
+
+    .contact-form-sent
+        width: clamp(270px,28.125vw,1080px)
+        height: clamp(245px,25.520833333333332vw,980px)
+        margin-top: $sixtyfourclamp
+        background-color: $main_blue
+        box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25)
+        border-radius: clamp(6px,0.625vw,24px)
+        border: 3px solid #33C191
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .name-input, .phone-input
+            width: 88.14814814814815%
+            height: clamp(22.5px,2.34375vw,90px)
+            border-radius: clamp(25px,2.6041666666666665vw,100px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 400
+            padding-left: $sixteenclamp
+            font-size: clamp(8.5px,0.8854166666666666vw,34px)
+            border: 2px solid #2593E9
+            &:focus
+                border: 2px solid #E39E22
+                outline: none
+
+        .name-input
+            margin-top: $thirtytwoclamp
+        .phone-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            width: 88.14814814814815%
+            height: clamp(85px,8.854166666666666vw,340px)
+            border-radius: clamp(7.5px,0.78125vw,30px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 400
+            padding-left: $sixteenclamp
+            padding-top: $sixteenclamp
+            font-size: clamp(8.5px,0.8854166666666666vw,34px)
+            margin-top: $sixteenclamp
+            display: flex
+            border: 2px solid #2593E9
+            &:focus
+                border: 2px solid #E39E22
+                outline: none
+        .send
+            width: 88.14814814814815%
+            height: clamp(27.5px,2.8645833333333335vw,110px)
+            background-color: $yellow
+            color: white
+            margin-top: $sixtyfourclamp
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            margin-bottom: $thirtytwoclamp
+            font-size: clamp(11.5px,1.1979166666666667vw,46px)
+            border-radius: clamp(20px,2.0833333333333335vw,80px)
+            cursor: pointer
+            border: none
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+        .sended
+            width: 88.14814814814815% !important
+            height: clamp(27.5px,2.8645833333333335vw,110px) !important
+            margin-top: $thirtytwoclamp !important
+            color: white !important
+            margin-top: $sixtyfourclamp !important
+            font-family: 'Source Sans Pro' !important
+            font-style: normal !important
+            font-weight: 700 !important
+            margin-bottom: $thirtytwoclamp !important
+            font-size: clamp(11.5px,1.1979166666666667vw,46px) !important
+            border-radius: clamp(20px,2.0833333333333335vw,80px) !important
+            cursor: pointer
+            border: none
+            transition: 0.3s all
+            background-color: #33C191
+            &:hover
+                background-color: $light_blue
+
+    .contact-form
+        width: clamp(270px,28.125vw,1080px)
+        height: clamp(245px,25.520833333333332vw,980px)
+        margin-top: $sixtyfourclamp
+        background-color: $main_blue
+        box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25)
+        border-radius: clamp(6px,0.625vw,24px)
+        border: 2px solid $light_blue
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .name-input, .phone-input
+            width: 88.14814814814815%
+            height: clamp(22.5px,2.34375vw,90px)
+            border-radius: clamp(25px,2.6041666666666665vw,100px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 400
+            padding-left: $sixteenclamp
+            font-size: clamp(8.5px,0.8854166666666666vw,34px)
+            border: 2px solid #2593E9
+            &:focus
+                border: 2px solid #E39E22
+                outline: none
+
+        .name-input
+            margin-top: $thirtytwoclamp
+
+        .phone-input
+            margin-top: $sixteenclamp
+
+        .comment-input
+            width: 88.14814814814815%
+            height: clamp(85px,8.854166666666666vw,340px)
+            border-radius: clamp(7.5px,0.78125vw,30px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 400
+            padding-left: $sixteenclamp
+            padding-top: $sixteenclamp
+            font-size: clamp(8.5px,0.8854166666666666vw,34px)
+            margin-top: $sixteenclamp
+            display: flex
+            border: 2px solid #2593E9
+            &:focus
+                border: 2px solid #E39E22
+                outline: none
+
+        .send
+            width: 88.14814814814815%
+            height: clamp(27.5px,2.8645833333333335vw,110px)
+            background-color: $yellow
+            color: white
+            margin-top: $sixtyfourclamp
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            margin-bottom: $thirtytwoclamp
+            font-size: clamp(11.5px,1.1979166666666667vw,46px)
+            border-radius: clamp(20px,2.0833333333333335vw,80px)
+            cursor: pointer
+            border: none
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+        .sended
+            width: 88.14814814814815%
+            height: clamp(27.5px,2.8645833333333335vw,110px)
+            margin-top: $thirtytwoclamp
+            color: white
+            margin-top: $sixtyfourclamp
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            margin-bottom: $thirtytwoclamp
+            font-size: clamp(11.5px,1.1979166666666667vw,46px)
+            border-radius: clamp(20px,2.0833333333333335vw,80px)
+            cursor: pointer
+            border: none
+            transition: 0.3s all
+            background-color: #33C191
+            transition: 0.3s all
+            &:hover
+                background-color: $light_blue
+
+@media only screen and (max-width: 767px)
+
+    .contact-container
+        width: $wrapper !important
+        display: flex !important
+        flex-direction: column !important
+        height: auto !important
+        margin: auto !important
+
+        .contact-heading
+            margin: auto !important
+            font-family: 'Source Sans Pro' !important
+            font-style: normal !important
+            font-weight: 700 !important
+            font-size: clamp(18px,8.411214953271028vw,72px) !important
+            color: #016599 !important
+            margin-top: $onetwoeightclamp !important
+
+        .contacts-and-form
+            display: flex !important
+            flex-direction: column !important
+            align-items: center !important
+            justify-content: center !important
+
+            .contact-form-sent
+                width: clamp(192.5px,89.95327102803738vw,770px) !important
+                height: clamp(208px,97.19626168224299vw,832px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                background-color: $main_blue !important
+                border: 2px solid #33C191
+                box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25) !important
+                border-radius: clamp(6px,2.803738317757009vw,24px) !important
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+
+                .name-input, .phone-input
+                    width: clamp(165px,77.10280373831776vw,660px) !important
+                    height: clamp(22px,10.280373831775702vw,88px) !important
+                    border-radius: clamp(25px,2.6041666666666665vw,100px) !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 400 !important
+                    padding-left: clamp(8px,3.7383177570093458vw,32px) !important
+                    font-size: clamp(7px,3.2710280373831777vw,28px) !important
+                    border: 3px solid #2593E9 !important
+                    &:focus
+                        border: 3px solid #E39E22 !important
+                        outline: none !important
+
+                    .name-input
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+                    .phone-input
+                        margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+
+                    .comment-input
+                        width: clamp(165px,77.10280373831776vw,660px) !important
+                        height: clamp(38px,35.51401869158879vw,304px) !important
+                        border-radius: clamp(10px,1.0416666666666667vw,40px) !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        font-weight: 400 !important
+                        padding-left: clamp(8px,3.7383177570093458vw,32px) !important
+                        padding-top: $sixteenclamp !important
+                        font-size: clamp(7px,3.2710280373831777vw,28px) !important
+                        margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+                        display: flex !important
+                        border: 3px solid #2593E9 !important
+                        &:focus
+                            border: 3px solid #E39E22 !important
+                            outline: none !important
+
+            .contact-form
+                width: clamp(192.5px,89.95327102803738vw,770px) !important
+                height: clamp(208px,97.19626168224299vw,832px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                background-color: $main_blue !important
+                box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.25) !important
+                border-radius: clamp(6px,2.803738317757009vw,24px) !important
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+
+                .name-input, .phone-input
+                    width: clamp(165px,77.10280373831776vw,660px) !important
+                    height: clamp(22px,10.280373831775702vw,88px) !important
+                    border-radius: clamp(25px,2.6041666666666665vw,100px) !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 400 !important
+                    padding-left: clamp(8px,3.7383177570093458vw,32px) !important
+                    font-size: clamp(7px,3.2710280373831777vw,28px) !important
+                    border: 3px solid #2593E9 !important
+                    &:focus
+                        border: 3px solid #E39E22 !important
+                        outline: none !important
+
+                .name-input
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+                .phone-input
+                    margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+
+                .comment-input
+                    width: clamp(165px,77.10280373831776vw,660px) !important
+                    height: clamp(38px,35.51401869158879vw,304px) !important
+                    border-radius: clamp(10px,1.0416666666666667vw,40px) !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 400 !important
+                    padding-left: clamp(8px,3.7383177570093458vw,32px) !important
+                    padding-top: $sixteenclamp !important
+                    font-size: clamp(7px,3.2710280373831777vw,28px) !important
+                    margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+                    display: flex !important
+                    border: 3px solid #2593E9 !important
+                    &:focus
+                        border: 3px solid #E39E22 !important
+                        outline: none !important
+
+                .send
+                    width: clamp(165px,77.10280373831776vw,660px) !important
+                    height: clamp(24px,11.214953271028037vw,96px) !important
+                    background-color: $yellow !important
+                    color: white !important
+                    margin-top: $sixtyfourclamp !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 700 !important
+                    margin-bottom: clamp(16px,7.4766355140186915vw,64px) !important
+                    font-size: clamp(11.5px,5.373831775700935vw,46px) !important
+                    border-radius: 50px !important
+                    cursor: pointer !important
+                    border: none !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background-color: $light_blue !important
+
+                .sended
+                    width: clamp(165px,77.10280373831776vw,660px) !important
+                    height: clamp(24px,11.214953271028037vw,96px) !important
+                    background-color: #33C191 !important
+                    color: white !important
+                    margin-top: $sixtyfourclamp !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 700 !important
+                    margin-bottom: clamp(16px,7.4766355140186915vw,64px) !important
+                    font-size: clamp(11.5px,5.373831775700935vw,46px) !important
+                    border-radius: 50px !important
+                    cursor: pointer !important
+                    border: none !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background-color: $light_blue !important
+
+            .phone-number-mob, .email-mob, .showOnMap-mob
+                display: flex !important
+                text-decoration: none
+
+            .phone-number-mob
+                font-family: 'Source Sans Pro' !important
+                font-style: normal !important
+                font-weight: 700 !important
+                font-size: clamp(19px,8.878504672897197vw,76px) !important
+                margin-top: clamp(32px,14.953271028037383vw,128px) !important
+                color: $main_blue !important
+
+            .email-mob
+                font-family: 'Source Sans Pro' !important
+                font-style: normal !important
+                font-weight: 700 !important
+                font-size: clamp(17.5px,8.177570093457945vw,70px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                color: $main_blue !important
+
+            .showOnMap-mob
+                width: clamp(172.5px,80.60747663551402vw,790px) !important
+                height: clamp(30px,14.018691588785046vw,120px) !important
+                border-radius: 50px !important
+                outline: none !important
+                border: none !important
+                background-color: $light_blue !important
+                font-family: 'Source Sans Pro' !important
+                font-style: normal !important
+                font-weight: 400 !important
+                font-size: clamp(12.5px,5.841121495327103vw,50px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                color: white !important
+                display: flex !important
+                align-items: center !important
+                cursor: pointer!important
+                justify-content: center !important
+
+            .contacts
+                display: flex !important
+                flex-direction: column !important
+
+                .contact-paragraph
+                    width: clamp(191px,89.25233644859813vw,764px) !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 400 !important
+                    font-size: clamp(12px,5.607476635514018vw,48px) !important
+                    margin-top: $sixtyfourclamp !important
+                    text-align: center !important
+                    color: $main_blue !important
+
+                .phone-number
+                    display: none !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 700 !important
+                    font-size: clamp(20px,2.0833333333333335vw,80px) !important
+                    color: $main_blue !important
+                    margin-top: $thirtytwoclamp !important
+
+                .mail, .geo
+                    display: none !important
+                    align-items: center !important
+                    margin-top: $thirtytwoclamp !important
+
+                    .geo-icon
+                        width: clamp(13px,1.3541666666666667vw,52px) !important
+                        height: clamp(18px,1.875vw,72px) !important
+
+                    .mail-icon
+                        width: clamp(17.5px,1.8229166666666667vw,70px) !important
+                        height: clamp(14px,1.4583333333333333vw,56px) !important
+
+                    .mail-bold-text, .geo-bold-text
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        font-weight: 700 !important
+                        font-size: clamp(12.5px,1.3020833333333333vw,50px) !important
+                        color: $light_blue !important
+                        margin-left: clamp(5px,0.5208333333333334vw,20px) !important
+
+                    .email, .adress
+                        display: none !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        font-weight: 400 !important
+                        font-size: clamp(12.5px,1.3020833333333333vw,50px) !important
+                        margin-left: $eightclamp !important
+                        color: $main_blue !important
+
+                .showOnMap
+                    display: none !important
+                    width: clamp(164px,17.083333333333332vw,656px) !important
+                    height: clamp(24px,2.5vw,96px) !important
+                    background: #2593E9 !important
+                    border-radius: clamp(23px,2.3958333333333335vw,92px) !important
+                    margin-top: $thirtytwoclamp !important
+                    font-size: clamp(12px,1.25vw,48px) !important
+                    color: white !important
+                    border: none !important
+                    cursor: pointer !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background: $yellow !important

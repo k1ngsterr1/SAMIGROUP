@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #E6F4F1;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+body .mobile-nav-links {
+  width: 100% !important;
+  height: auto !important;
+  background-color: #E6F4F1 !important;
+  top: clamp(34.5px, 16.1214953271vw, 138px);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  z-index: 10 !important;
+  flex-direction: column !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+  position: absolute !important;
+}
+body .mobile-nav-links .about-mob-link, body .mobile-nav-links .services-mob-link, body .mobile-nav-links .contacts-mob-link {
+  text-decoration: none;
+  color: #016599;
+  font-size: clamp(15px, 7.0093457944vw, 60px);
+}
+body .mobile-nav-links .about-mob-link {
+  margin-top: clamp(16px, 7.476635514vw, 64px);
+}
+body .mobile-nav-links .services-mob-link {
+  margin-top: clamp(10px, 4.6728971963vw, 40px);
+}
+body .mobile-nav-links .contacts-mob-link {
+  margin-top: clamp(10px, 4.6728971963vw, 40px);
+  margin-bottom: clamp(16px, 7.476635514vw, 64px);
+}/*# sourceMappingURL=navlinks_styles.css.map */

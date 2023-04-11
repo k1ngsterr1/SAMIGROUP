@@ -1,0 +1,282 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+.footer
+    width: 100%
+    height: auto
+    background-color: $pastel_blue
+    display: flex
+    flex-direction: column
+
+    .upper-footer
+        width: $wrapper
+        height: auto
+        display: flex
+        margin: auto
+        justify-content: space-between
+        align-items: center
+        margin-top: $thirtytwoclamp
+
+        .logo
+            width: clamp(92.5px,9.635416666666666vw,370px)
+            height: clamp(49.085px,5.113020833333334vw,196.34px)
+
+        .footer-nav
+            display: flex
+            align-items: center
+
+            .footer-about-company, .footer-services, .footer-contacts
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 400
+                font-size: clamp(11.5px,1.1979166666666667vw,46px)
+                color: $main_blue
+                transition: 0.3s all
+                cursor: pointer
+                &:hover
+                    color: $yellow
+
+            .footer-contacts
+                // margin-right: $sixtyfourclamp
+                text-decoration: none
+
+            .footer-services
+                margin-right: $sixtyfourclamp
+                margin-left: $sixtyfourclamp
+                text-decoration: none
+
+            .footer-about-company
+                margin-left: $sixtyfourclamp
+                text-decoration: none
+
+            .footer-button
+                width: clamp(132.5px,13.802083333333334vw,530px)
+                height: clamp(22.5px,2.34375vw,90px)
+                background-color: $yellow
+                cursor: pointer
+                border-radius: clamp(17.5px,1.8229166666666667vw,70px)
+                border: none
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 600
+                font-size: clamp(12.5px,1.3020833333333333vw,50px)
+                color: white
+                transition: 0.3s all
+                &:hover
+                    background-color: $light_blue
+
+    .footer-separator
+        width: 100%
+        height: 3px
+        background: rgba(1, 101, 153, 0.2)
+        margin-top: $thirtytwoclamp
+
+    .down-footer
+        width: $wrapper
+        height: auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: auto
+        font-family: 'Source Sans Pro'
+        font-style: normal
+        font-weight: 400
+        font-size: clamp(11px,1.1458333333333333vw,44px)
+        color: $main_blue
+        margin-top: $thirtytwoclamp
+        margin-bottom: $thirtytwoclamp
+
+        .sami-group-mob
+            display: none
+
+        .contact-with-us-mob
+            display: none
+
+        .contact-buttons
+            display: flex
+            align-items: center
+
+            .Mail-1, .Mail-2, .Mail-3
+                width: clamp(25px,2.6041666666666665vw,100px)
+                height: clamp(25px,2.6041666666666665vw,100px)
+                background-color: $yellow
+                border: none
+                border-radius: 50%
+                font-size: clamp(10.5px,1.09375vw,42px)
+                color: white
+                cursor: pointer
+                transition: 0.3s all
+                &:hover
+                    background-color: $light_blue
+
+            .Mail-2
+                margin-right: $sixteenclamp
+
+            .Mail-1
+                margin-right: $sixteenclamp
+
+@media only screen and (max-width: 767px)
+
+    .footer
+        width: 100% !important
+        height: auto !important
+        background-color: $main_blue !important
+        display: flex !important
+        flex-direction: column !important
+        align-items: center !important
+        justify-content: center !important
+
+        .upper-footer
+            width: $wrapper !important
+            height: auto !important
+            display: flex !important
+            margin: auto !important
+            justify-content: space-between !important
+            align-items: center !important
+            margin-top: $thirtytwoclamp !important
+
+            .logo
+                display: none !important
+                width: clamp(92.5px,9.635416666666666vw,370px) !important
+                height: clamp(49.085px,5.113020833333334vw,196.34px) !important
+
+            .footer-nav
+                display: none !important
+                align-items: center !important
+
+                .footer-about-company, .footer-services, .footer-contacts
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 400 !important
+                    font-size: clamp(11.5px,1.1979166666666667vw,46px) !important
+                    color: $main_blue !important
+                    transition: 0.3s all !important
+                    cursor: pointer !important
+                    &:hover
+                        color: $yellow !important
+
+                .footer-contacts
+                    margin-right: $sixtyfourclamp !important
+                    text-decoration: none !important
+
+                .footer-services
+                    margin-right: $sixtyfourclamp !important
+                    margin-left: $sixtyfourclamp !important
+                    text-decoration: none !important
+
+                .footer-about-company
+                    margin-left: $sixtyfourclamp !important
+                    text-decoration: none !important
+
+                .footer-button
+                    width: clamp(132.5px,13.802083333333334vw,530px) !important
+                    height: clamp(22.5px,2.34375vw,90px) !important
+                    background-color: $yellow !important
+                    cursor: pointer !important
+                    border-radius: clamp(17.5px,1.8229166666666667vw,70px) !important
+                    border: none !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 600 !important
+                    font-size: clamp(12.5px,1.3020833333333333vw,50px)!important
+                    color: white !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background-color: $light_blue !important
+
+        .footer-separator
+            width: 100% !important
+            height: 3px !important
+            display: none !important
+            background: rgba(1, 101, 153, 0.2) !important
+            margin-top: $thirtytwoclamp !important
+
+        .down-footer
+            width: $wrapper !important
+            height: auto !important
+            display: flex !important
+            flex-direction: column !important
+            align-items: center !important
+            justify-content: center !important
+            // margin: auto
+            margin-top: 0 !important
+            margin-bottom: 0 !important
+
+            .sami-group
+                display: none !important
+
+            .sami-group-mob
+                display: flex !important
+                font-family: 'Source Sans Pro' !important
+                font-style: normal !important
+                font-weight: 400 !important
+                font-size: clamp(11.5px,5.373831775700935vw,46px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                color: white !important
+                margin-bottom: clamp(10px,4.672897196261682vw,40px) !important
+
+            .contact-with-us-mob
+                width: clamp(137.5px,64.25233644859813vw,550px) !important
+                height: clamp(26.5px,12.383177570093459vw,106px) !important
+                font-size: clamp(12.5px,5.841121495327103vw,50px) !important
+                background-color: $yellow !important
+                border-radius: 90px !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                border: none !important
+                color: white !important
+                display: flex !important
+                justify-content: center !important
+                align-items: center !important
+
+            .contact-buttons
+                display: flex !important
+                align-items: center !important
+
+                .Mail-1, .Mail-2, .Mail-3
+                    width: clamp(25px,11.682242990654206vw,100px) !important
+                    height: clamp(25px,11.682242990654206vw,100px) !important
+                    background-color: $yellow !important
+                    border: none !important
+                    border-radius: 50% !important
+                    display: flex !important
+                    align-items: center !important
+                    justify-content: center !important
+                    font-size: clamp(10.5px,4.906542056074766vw,42px) !important
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                    color: white !important
+                    cursor: pointer !important
+                    transition: 0.3s all !important
+                    &:hover
+                        background-color: $light_blue !important
+
+                .Mail-2
+                    margin-right: clamp(8px,3.7383177570093458vw,32px)
+
+                .Mail-1
+                    margin-right: clamp(8px,3.7383177570093458vw,32px)

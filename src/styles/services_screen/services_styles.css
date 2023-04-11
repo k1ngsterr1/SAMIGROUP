@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.services-container {
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  background-color: #016599;
+}
+.services-container .services-wrapper {
+  width: 86.4583333333%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  flex-direction: column;
+  margin-top: clamp(5px, 0.5208333333vw, 20px);
+  margin-bottom: clamp(64px, 6.6666666667vw, 256px);
+}
+.services-container .services-heading {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.services-container .services-heading .left-wheat, .services-container .services-heading .right-wheat {
+  width: clamp(100px, 10.4166666667vw, 400px);
+  height: clamp(150px, 15.625vw, 600px);
+}
+.services-container .services-heading .left-wheat {
+  margin-right: clamp(40px, 4.1666666667vw, 160px);
+}
+.services-container .services-heading .right-wheat {
+  margin-left: clamp(40px, 4.1666666667vw, 160px);
+}
+.services-container .services-heading .service-heading {
+  font-size: clamp(22.5px, 2.34375vw, 90px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+}
+.services-container .cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(30px, 3.125vw, 120px);
+}
+.services-container .cards-container .card-1, .services-container .cards-container .card-2, .services-container .cards-container .card-3 {
+  width: clamp(220px, 22.9166666667vw, 880px);
+  cursor: pointer;
+  height: auto;
+  border-radius: clamp(3.5px, 0.3645833333vw, 14px);
+  border: 4px dashed white;
+  flex-direction: column;
+  transition: 0.3s all;
+}
+.services-container .cards-container .card-1:hover, .services-container .cards-container .card-2:hover, .services-container .cards-container .card-3:hover {
+  border: 4px dashed #E39E22;
+  box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.2);
+}
+.services-container .cards-container .card-1 .users-icon, .services-container .cards-container .card-2 .users-icon, .services-container .cards-container .card-3 .users-icon {
+  width: clamp(32.5px, 3.3854166667vw, 130px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+}
+.services-container .cards-container .card-1 .card-heading, .services-container .cards-container .card-2 .card-heading, .services-container .cards-container .card-3 .card-heading {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(16.5px, 1.71875vw, 66px);
+  color: white;
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+}
+.services-container .cards-container .card-1 .card-p, .services-container .cards-container .card-2 .card-p, .services-container .cards-container .card-3 .card-p {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  width: clamp(165px, 17.1875vw, 660px);
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+}
+.services-container .cards-container .card-1 .price, .services-container .cards-container .card-2 .price, .services-container .cards-container .card-3 .price {
+  color: #E39E22;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  margin: auto;
+  margin-left: clamp(47.5px, 4.9479166667vw, 190px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  margin-bottom: clamp(32px, 3.3333333333vw, 128px);
+  font-size: clamp(20px, 2.0833333333vw, 80px);
+}
+@media only screen and (max-width: 767px) {
+  .services-container {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #016599 !important;
+  }
+  .services-container .services-wrapper {
+    width: 86.4583333333% !important;
+    height: auto !important;
+    margin: auto !important;
+    display: flex !important;
+    position: relative !important;
+    z-index: 100 !important;
+    flex-direction: column !important;
+    margin-bottom: clamp(64px, 6.6666666667vw, 256px) !important;
+  }
+  .services-container .services-wrapper .services-heading {
+    display: flex !important;
+    align-items: center !important;
+    margin: auto !important;
+  }
+  .services-container .services-wrapper .services-heading .left-wheat, .services-container .services-wrapper .services-heading .right-wheat {
+    display: none !important;
+    width: clamp(60px, 28.0373831776vw, 240px) !important;
+    height: clamp(65px, 30.3738317757vw, 260px) !important;
+  }
+  .services-container .services-wrapper .services-heading .service-heading {
+    font-size: clamp(18px, 8.4112149533vw, 72px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+    color: white !important;
+  }
+  .services-container .services-wrapper .cards-container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .services-container .services-wrapper .cards-container .card-1, .services-container .services-wrapper .cards-container .card-2, .services-container .services-wrapper .cards-container .card-3 {
+    width: clamp(167px, 78.0373831776vw, 668px) !important;
+    height: auto !important;
+    border-radius: 10px !important;
+    border: 4px dashed white !important;
+    flex-direction: column !important;
+    display: flex !important;
+    margin-top: 64px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .services-container .services-wrapper .cards-container .card-1 .users-icon, .services-container .services-wrapper .cards-container .card-2 .users-icon, .services-container .services-wrapper .cards-container .card-3 .users-icon {
+    width: clamp(31px, 14.4859813084vw, 124px) !important;
+    height: clamp(22px, 10.2803738318vw, 88px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    margin-left: 0 !important;
+  }
+  .services-container .services-wrapper .cards-container .card-1 .card-heading, .services-container .services-wrapper .cards-container .card-2 .card-heading, .services-container .services-wrapper .cards-container .card-3 .card-heading {
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    font-size: clamp(15px, 7.0093457944vw, 60px) !important;
+    color: white !important;
+    margin-left: 0 !important;
+  }
+  .services-container .services-wrapper .cards-container .card-1 .card-p, .services-container .services-wrapper .cards-container .card-2 .card-p, .services-container .services-wrapper .cards-container .card-3 .card-p {
+    width: clamp(139px, 64.953271028vw, 556px) !important;
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+    margin-left: 0 !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    text-align: center !important;
+    font-weight: 300 !important;
+    color: white !important;
+    font-size: 20.5px !important;
+  }
+  .services-container .services-wrapper .cards-container .card-1 .price, .services-container .services-wrapper .cards-container .card-2 .price, .services-container .services-wrapper .cards-container .card-3 .price {
+    color: #E39E22 !important;
+    font-family: "Source Sans Pro" !important;
+    font-style: normal !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    margin-bottom: clamp(16px, 7.476635514vw, 64px) !important;
+    font-size: clamp(17.5px, 8.1775700935vw, 70px) !important;
+  }
+}/*# sourceMappingURL=services_styles.css.map */

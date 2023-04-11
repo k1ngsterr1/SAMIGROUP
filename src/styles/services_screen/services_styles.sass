@@ -1,0 +1,219 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap')
+
+// Colors
+$main_blue: #016599
+$light_blue: #2593E9
+$pastel_blue: #E6F4F1
+$yellow: #E39E22
+
+// Sizes
+$main_heading: clamp(35px,3.6458333333333335vw,140px)
+$secondary_heading: clamp(27.5px,2.8645833333333335vw,110px)
+$basic_text: clamp(8.75px,1.8229166666666667vw,70px)
+$medium_text: clamp(16.5px,1.71875vw,66px)
+$small_text: clamp(11px,1.1458333333333333vw,44px)
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Width
+$wrapper: 86.45833333333333%
+
+.services-container
+    width: 100%
+    height: auto !important
+    display: flex
+    flex-direction: column
+    background-color: $main_blue
+
+    .services-wrapper
+        width: $wrapper
+        height: auto
+        margin: auto
+        display: flex
+        position: relative
+        z-index: 100
+        flex-direction: column
+        margin-top: clamp(5px,0.5208333333333334vw,20px)
+        margin-bottom: $onetwoeightclamp
+
+    .services-heading
+        display: flex
+        align-items: center
+        margin: auto
+
+        .left-wheat, .right-wheat
+            width: clamp(100px,10.416666666666666vw,400px)
+            height: clamp(150px,15.625vw,600px)
+
+        .left-wheat
+            margin-right: clamp(40px,4.166666666666667vw,160px)
+
+        .right-wheat
+            margin-left: clamp(40px,4.166666666666667vw,160px)
+
+        .service-heading
+            font-size: clamp(22.5px, 2.34375vw, 90px)
+            font-family: 'Source Sans Pro'
+            font-style: normal
+            font-weight: 700
+            color: white
+
+    .cards-container
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: clamp(30px,3.125vw,120px)
+
+        .card-1, .card-2, .card-3
+            width: clamp(220px,22.916666666666668vw,880px)
+            cursor: pointer
+            height: auto
+            border-radius: clamp(3.5px,0.3645833333333333vw,14px)
+            border: 4px dashed white
+            flex-direction: column
+            transition: 0.3s all
+            &:hover
+                border: 4px dashed #E39E22
+                box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.2)
+
+            .users-icon
+                width: clamp(32.5px,3.3854166666666665vw,130px)
+                height: clamp(24.5px,2.5520833333333335vw,98px)
+                margin-top: $thirtytwoclamp
+                margin-left: $thirtytwoclamp
+
+            .card-heading
+                margin-top: $thirtytwoclamp
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 600
+                font-size: clamp(16.5px,1.71875vw,66px)
+                color: white
+                margin-left: $thirtytwoclamp
+
+            .card-p
+                margin-top: $thirtytwoclamp
+                width: clamp(165px,17.1875vw,660px)
+                margin-left: $thirtytwoclamp
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 300
+                color: white
+                font-size: clamp(11px,1.1458333333333333vw,44px)
+
+            .price
+                color: $yellow
+                font-family: 'Source Sans Pro'
+                font-style: normal
+                font-weight: 700
+                margin: auto
+                margin-left: clamp(47.5px,4.947916666666667vw,190px)
+                margin-top: $sixtyfourclamp
+                margin-bottom: $sixtyfourclamp
+                font-size: clamp(20px,2.0833333333333335vw,80px)
+
+            .more
+
+@media only screen and (max-width: 767px)
+
+    .services-container
+        width: 100% !important
+        height: auto !important
+        display: flex !important
+        flex-direction: column !important
+        background-color: $main_blue !important
+
+        .services-wrapper
+            width: $wrapper !important
+            height: auto !important
+            margin: auto !important
+            display: flex !important
+            position: relative !important
+            z-index: 100 !important
+            flex-direction: column !important
+            // margin-top: clamp(5px,0.5208333333333334vw,20px)
+            margin-bottom: $onetwoeightclamp !important
+
+            .services-heading
+                display: flex !important
+                align-items: center !important
+                margin: auto !important
+
+                .left-wheat, .right-wheat
+                    display: none !important
+                    width: clamp(60px,28.037383177570092vw,240px) !important
+                    height: clamp(65px,30.373831775700936vw,260px) !important
+
+                .service-heading
+                    font-size: clamp(18px,8.411214953271028vw,72px) !important
+                    font-family: 'Source Sans Pro' !important
+                    font-style: normal !important
+                    font-weight: 700 !important
+                    margin-top: clamp(32px,14.953271028037383vw,128px) !important
+                    color: white !important
+
+            .cards-container
+                width: 100% !important
+                display: flex !important
+                flex-direction: column !important
+                justify-content: space-between !important
+                align-items: center !important
+
+                .card-1, .card-2, .card-3
+                    width: clamp(167px,78.03738317757009vw,668px) !important
+                    height: auto !important
+                    border-radius: 10px !important
+                    border: 4px dashed white !important
+                    flex-direction: column !important
+                    display: flex !important
+                    margin-top: 64px !important
+                    align-items: center !important
+                    justify-content: center !important
+
+                    .users-icon
+                        width: clamp(31px,14.485981308411215vw,124px) !important
+                        height: clamp(22px,10.280373831775702vw,88px) !important
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                        margin-left: 0 !important
+
+                    .card-heading
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        text-align: center !important
+                        font-weight: 600 !important
+                        font-size: clamp(15px,7.009345794392523vw,60px)!important
+                        color: white !important
+                        margin-left: 0 !important
+
+                    .card-p
+                        width: clamp(139px,64.95327102803738vw,556px) !important
+                        margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+                        margin-left: 0 !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        text-align: center !important
+                        font-weight: 300 !important
+                        color: white !important
+                        font-size: 20.5px !important
+
+                    .price
+                        color: $yellow !important
+                        font-family: 'Source Sans Pro' !important
+                        font-style: normal !important
+                        text-align: center !important
+                        font-weight: 700 !important
+                        // margin-left: 0 !important
+                        margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                        margin-bottom: clamp(16px,7.4766355140186915vw,64px) !important
+                        font-size: clamp(17.5px,8.177570093457945vw,70px) !important
